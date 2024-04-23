@@ -1,0 +1,138 @@
+1. https://app.diagrams.net/
+2. https://lucid.app/
+
+data model
+-----------
+
+user :
+* _id
+* id (generated)
+* password
+* needsPasswordChange
+* role
+* isDeleted
+* createdAt
+* updatedAt
+
+
+Student: 
+
+* _id
+* id (generated)
+* user
+* name
+* gender
+* dateOfBirth
+* email
+* contactNo
+* emergencyContactNo
+* presentAddress
+* permanentAddress
+* profileImage
+* guardian
+* localGuardian
+* profileGuardian
+* status
+* academicFaculty
+* academicDepertment
+* isDeleted
+* createAt
+* updatedAt
+
+Faculty: 
+
+* _id
+* id (generated)
+* user
+* role
+* designation
+* name
+* gender
+* dateOfBirth
+* email
+* contactNo
+* emergencyContactNo
+* presentAddress
+* permanentAddress
+* profileImage
+* guardian
+* localGuardian
+* profileGuardian
+* status
+* academicFaculty
+* academicDepertment
+* isDeleted
+* createAt
+* updatedAt
+
+Admin: 
+
+* _id
+* id (generated)
+* user
+* password
+* needsPasswordChange
+* role
+* designation
+* name
+* gender
+* dateOfBirth
+* email
+* contactNo
+* emergencyContactNo
+* presentAddress
+* permanentAddress
+* profileImage
+* guardian
+* localGuardian
+* profileGuardian
+* status
+* academicFaculty
+* academicDepertment
+* isDeleted
+* createAt
+* updatedAt
+
+API Endpoints
+-------------------------
+
+user:
+
+* users/create-stuents(POST)
+* users/create-faculty(POST)
+* user/create-admin(POST)
+
+Student
+
+* students(GET)
+* students/:id(GET)
+* students/:id(PATCH)
+* students/:ID(DELETE)
+* students/my-profile
+
+Faculty
+
+* faculties(GET)
+* faculties/:id(GET)
+* faculties/:id(PATCH)
+* faculties/:ID(DELETE)
+* faculties/my-profile
+
+Admin
+
+* admins(GET)
+* admins/:id(GET)
+* admins/:id(PATCH)
+* admins/:ID(DELETE)
+* admins/my-profile
+
+Auth
+
+* auth/login
+* auth/refreash-token
+* auth/change-password
+* auth/forget-password
+* auth/reset-password
+
+
+
